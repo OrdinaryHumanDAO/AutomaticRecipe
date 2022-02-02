@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calendarRecipeFragment">
+
+    <fragment
+        android:id="@+id/calendarRecipeFragment"
+        android:name="com.example.calendartestapp.calendarRecipe.CalendarRecipeFragment"
+        android:label="CalendarRecipeFragment"
+        tools:layout="@layout/fragment_calendar_recipe">
+        <action
+            android:id="@+id/action_calendarRecipeFragment_to_calendarRecipeDetailFragment"
+            app:destination="@id/calendarRecipeDetailFragment"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_calendarRecipeFragment_to_noDataFragment"
+            app:destination="@id/noDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calendarRecipeDetailFragment"
+        android:name="com.example.calendartestapp.calendarRecipeDetail.CalendarRecipeDetailFragment"
+        android:label="fragment_calendar_recipe_detail"
+        tools:layout="@layout/fragment_calendar_recipe_detail" >
+        <argument android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_calendarRecipeDetailFragment_to_editRecipeDialog"
+            app:destination="@id/editRecipeDialog" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calendarRecipeTodayFragment"
+        android:name="com.example.calendartestapp.calendarRecipeToday.CalendarRecipeTodayFragment"
+        android:label="fragment_calendar_recipe_today"
+        tools:layout="@layout/fragment_calendar_recipe_today" >
+        <action
+            android:id="@+id/action_calendarRecipeTodayFragment_to_noDataFragment"
+            app:destination="@id/noDataFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/preferenceFragment"
+        android:name="com.example.calendartestapp.setting.PreferenceFragment"
+        android:label="PreferenceFragment"
+        tools:xml="@xml/preferences">
+        <action
+            android:id="@+id/action_preferenceFragment_to_deleteRecipeDialog"
+            app:destination="@id/deleteRecipeDialog" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_preferenceFragment"
+        app:destination="@id/preferenceFragment" />
+
+    <fragment
+        android:id="@+id/noDataFragment"
+        android:name="com.example.calendartestapp.noData.NoDataFragment"
+        android:label="fragment_no_data"
+        tools:layout="@layout/fragment_no_data" />
+
+    <dialog
+        android:id="@+id/deleteRecipeDialog"
+        android:name="com.example.calendartestapp.alertDialog.DeleteRecipeDialog"
+        android:label="DeleteRecipeDialog" />
+
+    <dialog
+        android:id="@+id/editRecipeDialog"
+        android:name="com.example.calendartestapp.alertDialog.EditRecipeDialog"
+        android:label="EditRecipeDialog" />
+
+</navigation>
