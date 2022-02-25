@@ -7,6 +7,7 @@
 ほかにも仕事や遊びの帰りに食材の買い忘れを防ぐようなものがあれば便利だと思ったからです。
 
 ## スクリーンショット
+![automaticRecipeScreenshots](https://user-images.githubusercontent.com/98923767/155640987-f6549bc3-1024-42e1-b07c-375f6cf20adf.png)
 
 ## 使ったライブラリ
 - jetpack
