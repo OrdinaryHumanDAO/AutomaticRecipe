@@ -9,6 +9,8 @@
 ## スクリーンショット
 ![automaticRecipeScreenshots](https://user-images.githubusercontent.com/98923767/155640987-f6549bc3-1024-42e1-b07c-375f6cf20adf.png)
 
+## 動画
+
 ## 使ったライブラリ
 - jetpack
   - Recyclerview
