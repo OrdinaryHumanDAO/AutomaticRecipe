@@ -10,6 +10,7 @@
 ![automaticRecipeScreenshots](https://user-images.githubusercontent.com/98923767/155640987-f6549bc3-1024-42e1-b07c-375f6cf20adf.png)
 
 ## 動画
+<https://user-images.githubusercontent.com/98923767/155825489-c0365f1a-c695-4411-9978-205d5282432f.mp4>
 
 ## 使ったライブラリ
 - jetpack
